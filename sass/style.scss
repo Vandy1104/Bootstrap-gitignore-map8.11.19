@@ -1,0 +1,44 @@
+$gray-600 : red;
+// Option A - Bringing everything from bootstrap , makes folder huge
+// Option B - include parts of bootstrap
+// Required
+@import "bootstrap-4.3.1/scss/functions";
+@import "bootstrap-4.3.1/scss/variables";
+@import "bootstrap-4.3.1/scss/mixins";
+
+// @import 'bootstrap-4.3.1/scss/bootstrap';
+
+@import "bootstrap-4.3.1/scss/utilities/";
+@import "bootstrap-4.3.1/scss/grid";
+@import "bootstrap-4.3.1/scss/buttons";
+@import "bootstrap-4.3.1/scss/images";
+@import "bootstrap-4.3.1/scss/jumbotron";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: pink;
+}
+
+.myBtn{
+  display: block;
+  margin: auto;
+}
+
+.myJumbo{
+  background: white;
+  text-align: center;
+}
+
+// Required height for google map Containers
+
+#map{
+  width: 100%;
+  height: 500px;
+  background: grey;
+}
